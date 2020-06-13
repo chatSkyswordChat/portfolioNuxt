@@ -22,10 +22,12 @@
               </li>
 
               <li>
-                <span class="bgRed colorWhite">
-                  <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                </span>
-                <p class="font12">chatthong hongwisuthikul</p>
+                <a href="https://www.facebook.com/home.php?ref=hp" target="_blank">
+                  <span class="bgRed colorWhite">
+                    <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                  </span>
+                  <p class="font12">chatthong hongwisuthikul</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -78,6 +80,15 @@ export default {};
 }
 .contact li:last-child {
   border-right: 0;
+}
+.contact li a{
+  text-decoration: none;
+  color: var(--colorBlack);
+  display: flex;
+  align-items: center;
+}
+.contact li a:hover{
+  color: var(--colorRed);
 }
 .contact span {
   border-radius: 50%;
