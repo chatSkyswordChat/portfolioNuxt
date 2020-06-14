@@ -1,7 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
+  // mode: 'universal',
+  mode: 'spa',
+  router: {
+     base: '/portfolioNuxt/'
+   },
   /*
   ** Headers of the page
   */
