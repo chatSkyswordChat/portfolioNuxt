@@ -84,6 +84,12 @@ export default {
 };
 </script>
 
+<style>
+.btnMenu::before {
+  opacity: 0 !important;
+}
+</style>
+
 <style scoped>
 .logo {
   padding-left: 0 !important;
