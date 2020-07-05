@@ -7,7 +7,7 @@ const _52c5711b = () => interopDefault(import('..\\pages\\contact\\index.vue' /*
 const _44f7051e = () => interopDefault(import('..\\pages\\curriculumVitae\\index.vue' /* webpackChunkName: "pages_curriculumVitae_index" */))
 const _53e9129a = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages_portfolio_index" */))
 const _77c05098 = () => interopDefault(import('..\\pages\\workHistory\\index.vue' /* webpackChunkName: "pages_workHistory_index" */))
-const _075d89db = () => interopDefault(import('..\\pages\\portfolio\\_id.vue' /* webpackChunkName: "pages_portfolio__id" */))
+const _720be372 = () => interopDefault(import('..\\pages\\portfolio\\_id\\index.vue' /* webpackChunkName: "pages_portfolio__id_index" */))
 const _28aeb0f9 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 // TODO: remove in Nuxt 3
@@ -44,7 +44,7 @@ export const routerOptions = {
     name: "workHistory"
   }, {
     path: "/portfolio/:id",
-    component: _075d89db,
+    component: _720be372,
     name: "portfolio-id"
   }, {
     path: "/",
