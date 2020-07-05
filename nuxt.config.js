@@ -2,10 +2,10 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   // mode: "universal",
-  mode: 'spa',
+  mode: "spa",
   router: {
-     base: '/portfolioNuxt/'
-   },
+    base: "/portfolioNuxt/"
+  },
   /*
    ** Headers of the page
    */
@@ -42,7 +42,7 @@ export default {
    */
   plugins: [
     { src: "@/plugins/fontAwesome.js" },
-    { src: "@/plugins/aos.js", mode: "client" },
+    { src: "@/plugins/aos.js", mode: "client" }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -88,7 +88,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-    }
+    extend(config, ctx) {}
   }
 };
