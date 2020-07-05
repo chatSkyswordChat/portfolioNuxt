@@ -5,7 +5,12 @@
         <h2 class="fontHeading">My Skill</h2>
       </v-col>
       <v-col cols="12" md="6">
-        <div v-for="(item, index) in items" :key="index.id" data-aos="fade-right" data-aos-duration="1500">
+        <div
+          v-for="(item, index) in items"
+          :key="index.id"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <p class="font10">{{ item.name }}</p>
           <v-progress-linear
             color="red darken-2"
@@ -26,7 +31,11 @@
         <section class="gridSkill">
           <div v-for="(skill, index) in skills" :key="index">
             <v-hover v-slot:default="{ hover }">
-              <div class="bgSkill elevation-4" :data-aos="skill.fade" :data-aos-duration="skill.number">
+              <div
+                class="bgSkill elevation-4"
+                :data-aos="skill.fade"
+                :data-aos-duration="skill.number"
+              >
                 <section class="flexSkill">
                   <img :src="skill.src" alt="" />
                   <h6 class="font10">{{ skill.name }}</h6>
@@ -56,7 +65,7 @@ export default {
   data() {
     return {
       items: [
-        { name: "Adobe Illustrator", skill: 90, text: "white" },
+        { name: "Adobe Illustrator", skill: 90 },
         { name: "Adobe Photoshp", skill: 90 },
         { name: "Adobe Xd", skill: 70 },
         { name: "Adobe Lightroom", skill: 90 },
@@ -67,32 +76,32 @@ export default {
       skills: [
         {
           name: "Photographer",
-          src: require("../../assets/images/home/skill-01.svg"),
+          src: require("@/assets/images/home/skill-01.svg"),
           detail: `I have the ability to take pictures and decorate pictures as a hobby. 
           I like traveling to take beautiful photos.`,
-          fade : 'fade-down',
-          number : 1000
+          fade: "fade-down",
+          number: 1000
         },
         {
           name: "HTML CSS Responsive",
-          src: require("../../assets/images/home/skill-02.svg"),
+          src: require("@/assets/images/home/skill-02.svg"),
           detail: `I can write html css and make it support all screens, but javascript I still have to practice a lot.`,
-          fade : 'fade-left',
-          number : 1500
+          fade: "fade-left",
+          number: 1500
         },
         {
           name: "Graphic Design",
-          src: require("../../assets/images/home/skill-03.svg"),
+          src: require("@/assets/images/home/skill-03.svg"),
           detail: `I use it to design banners, logos, and various publications with Adobe, Illustrator, and Photoshop.`,
-          fade : 'fade-up',
-          number : 2000
+          fade: "fade-up",
+          number: 2000
         },
         {
           name: "Web Design",
-          src: require("../../assets/images/home/skill-04.svg"),
+          src: require("@/assets/images/home/skill-04.svg"),
           detail: `I designed the website with Adobe xd to present at the meeting before coding`,
-          fade : 'fade-right',
-          number : 2500
+          fade: "fade-right",
+          number: 2500
         }
       ]
     };
@@ -137,9 +146,9 @@ export default {
   align-items: center;
   justify-content: center;
 }
-@media (max-width:960px){
-    .gridSkill {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
+@media (max-width: 960px) {
+  .gridSkill {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 </style>

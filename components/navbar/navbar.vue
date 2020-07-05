@@ -21,7 +21,6 @@
         :key="index.id"
         text
         exact-active-class="active"
-        dark
         :to="menu.route"
         class="btnMenu hidden-sm-and-down"
       >
@@ -57,24 +56,33 @@ export default {
   data() {
     return {
       menus: [
-        { name: "HOME", route: "/", icon: "home" },
-        { name: "PORTFOLIO", route: "/portfolio", icon: "portrait" },
-        { name: "WORK HISTORY", route: "/workHistory", icon: "graduation-cap" },
-        { name: "CONTACT", route: "/contact", icon: "mobile-alt" }
+        { name: "HOME", route: { name: "index" }, icon: "home" },
+        {
+          name: "Curriculum Vitae",
+          route: { name: "curriculumVitae" },
+          icon: "portrait"
+        },
+        {
+          name: "PORTFOLIO",
+          route: { name: "portfolio" },
+          icon: "file"
+        },
+        {
+          name: "WORK HISTORY",
+          route: { name: "workHistory" },
+          icon: "graduation-cap"
+        },
+        {
+          name: "CONTACT",
+          route: { name: "contact" },
+          icon: "mobile-alt"
+        }
       ],
       drawer: false
     };
   }
 };
 </script>
-
-<style>
-.headerMenu .v-toolbar__content,
-.headerMenu .v-toolbar__extension {
-  max-width: 1185px;
-  margin: 0 auto;
-}
-</style>
 
 <style scoped>
 .logo {

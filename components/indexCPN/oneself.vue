@@ -22,7 +22,10 @@
               </li>
 
               <li>
-                <a href="https://www.facebook.com/home.php?ref=hp" target="_blank">
+                <a
+                  href="https://www.facebook.com/home.php?ref=hp"
+                  target="_blank"
+                >
                   <span class="bgRed colorWhite">
                     <font-awesome-icon :icon="['fab', 'facebook-f']" />
                   </span>
@@ -43,7 +46,7 @@ export default {};
 
 <style scoped>
 .bgOneself {
-  background: url('~assets/images/home/bg1.jpg') center center no-repeat;
+  background: url(~assets/images/home/bg1.jpg) center center no-repeat;
   min-height: 100vh;
   background-size: cover;
   padding-top: 55px;
@@ -81,13 +84,13 @@ export default {};
 .contact li:last-child {
   border-right: 0;
 }
-.contact li a{
+.contact li a {
   text-decoration: none;
   color: var(--colorBlack);
   display: flex;
   align-items: center;
 }
-.contact li a:hover{
+.contact li a:hover {
   color: var(--colorRed);
 }
 .contact span {

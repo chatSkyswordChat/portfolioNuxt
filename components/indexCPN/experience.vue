@@ -69,7 +69,7 @@ export default {
           number: "1500"
         },
         {
-          date: "February 2016 to May 2017",
+          date: "September 2015 to February 2016",
           company: `Knight Frank Thailand | Real Estate Agents`,
           position: "Graphic Designer",
           detail: `Design banners, brochures, vinyl banners. Check the work already. To enter the printing process`,
@@ -83,6 +83,7 @@ export default {
     const AOS = await import("aos");
     AOS.init();
   },
+  // or
   // mounted() {
   //   import("aos").then(AOS => AOS.init());
   // }
@@ -95,12 +96,12 @@ export default {
   flex-wrap: wrap;
 }
 .bg2 {
-  background: url(../../assets/images/home/bg2.jpg) 40% 50% no-repeat;
+  background: url(~assets/images/home/bg2.jpg) 40% 50% no-repeat;
   background-size: auto;
   min-height: 100vh;
 }
 .bg3 {
-  background: url(../../assets/images/home/bg3.jpg) top center no-repeat;
+  background: url(~assets/images/home/bg3.jpg) top center no-repeat;
   background-size: auto;
   min-height: 100vh;
   position: relative;

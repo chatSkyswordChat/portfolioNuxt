@@ -1,23 +1,31 @@
 <template>
   <v-app>
     <navbar />
-    <v-content>
+    <v-content class="xHidden">
         <v-container>
           <v-row>
-            <router-view />
+            <nuxt />
           </v-row>
         </v-container>
+
+        <v-footer>
+          <footerPort/>
+        </v-footer>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import navbar from "@/components/navbar/navbar";
+import footerPort from "@/components/footer/footer";
 export default {
   components: {
-    navbar
+    navbar,
+    footerPort
   }
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
