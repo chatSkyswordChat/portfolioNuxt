@@ -30,7 +30,8 @@ export default {
         {
           name: require("@/assets/images/portfolio/port27.jpg"),
           // to: "/portfolio/27",
-          to: { name: "portfolio", params: { id: 27 } }
+          to: { name: "portfolioNuxt/portfolio", params: { id: 27 } },
+          // to: { name: "portfolio", params: { id: 27 } }
         }
       ]
     };
