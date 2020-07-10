@@ -180,14 +180,15 @@ export default {
         ]
       },
       {
-        id: 25,
-        head: `Direct Mail Icon Idea`,
-        size: `width 960 px. x height 3500 px.`,
-        create: `December 2019`,
-        detail: `On the end of the year festival Therefore having the concept to design impressive gifts And receive
-        different sweepstakes prizes`,
+        id: 27,
+        head: `UX / UI Application Jobbkk`,
+        size: `none`,
+        create: `January 2020`,
+        detail: `Design jobbkk's ux / ui applications with the red color that symbolizes the organization. 
+        Modern, simple, following the trend of the IT era. And issuing various usage functions`,
         imgaes: [
-          { name: require(`@/assets/images/portfolioDetail/detail16.jpg`) }
+          { name: require(`@/assets/images/portfolioDetail/detail17.jpg`) },
+          { name: require(`@/assets/images/portfolioDetail/detail18.jpg`) }
         ]
       }
     ];

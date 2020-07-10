@@ -317,6 +317,9 @@ export default {
 .bgVitae {
   min-height: 100vh;
 }
+.leftVitae{
+  border-radius: 10px;
+}
 .vitaeTop {
   padding-top: 75px;
 }
@@ -341,7 +344,6 @@ export default {
 .radius {
   border-radius: 10px;
 }
-
 .gridVitaeAlign {
   display: grid;
   grid-template-columns: 0.1fr 1fr;
