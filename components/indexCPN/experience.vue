@@ -94,6 +94,7 @@ export default {
 .flexEx {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .bg2 {
   background: url(~assets/images/home/bg2.jpg) 40% 50% no-repeat;

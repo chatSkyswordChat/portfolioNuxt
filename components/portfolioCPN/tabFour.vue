@@ -29,8 +29,7 @@ export default {
         },
         {
           name: require("@/assets/images/portfolio/port27.jpg"),
-          // to: "/portfolio/27",
-          to: { name: "portfolioNuxt/portfolio", params: { id: 27 } },
+          to: "/portfolio/27",
           // to: { name: "portfolio", params: { id: 27 } }
         }
       ]
@@ -38,13 +37,13 @@ export default {
   },
   methods: {
     clickUrl(tabFour) {     
-      if(tabFour.to.name != null){
-        var url = `/${tabFour.to.name}/${tabFour.to.params.id}`
-        window.open(url);
-      }else{
-        window.open(tabFour.to, '_blank');
-      }
-      // window.open(tabFour.to, '_blank');
+      // if(tabFour.to.name != null){
+      //   var url = `/${tabFour.to.name}/${tabFour.to.params.id}`
+      //   window.open(url);
+      // }else{
+      //   window.open(tabFour.to, '_blank');
+      // }
+      window.open(tabFour.to, '_blank');
     }
   }
 };
