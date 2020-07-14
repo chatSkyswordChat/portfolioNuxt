@@ -1,5 +1,5 @@
 <template>
-  <div class="calC maxW bg3 portTop">
+  <div class="calC bg3 portTop">
     <v-container>
       <v-row>
         <v-col cols="12">

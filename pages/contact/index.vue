@@ -1,10 +1,23 @@
 <template>
-  <section class="contact calC pt-12 maxW">
+  <section class="contact calC pt-12">
     <v-container class="relative">
       <v-row>
         <v-col cols="12" class="contactScale">
           <h2 class="fontContact colorWhite">CONTACT</h2>
-          <article class="gridContact">
+          <div class="mb-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.1101868660153!2d100.63413631465448!3d13.77222819033428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d61f69cda26b9%3A0xe7335e9bf59d0a9a!2z4LiL4Lit4LiiIOC4peC4suC4lOC4nuC4o-C5ieC4suC4pyAxMDkg4LmB4LiC4Lin4LiHIOC4hOC4peC4reC4h-C4iOC4seC5iOC4mSDguYDguILguJXguJrguLLguIfguIHguLDguJvguLQg4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIDEwMjQw!5e0!3m2!1sth!2sth!4v1594735658996!5m2!1sth!2sth"
+              width="600"
+              height="400"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              class="map"
+            ></iframe>
+          </div>
+          <article class="gridContact mb-8">
             <figure
               v-for="item in items"
               :key="item.id"
@@ -13,7 +26,7 @@
               class="bgWhite elevation-5 pa-4"
             >
               <img :src="item.icon" alt="" />
-              <p>{{ item.name }}</p>
+              <p class="font12">{{ item.name }}</p>
             </figure>
           </article>
         </v-col>
@@ -76,7 +89,6 @@ export default {
   position: relative;
 }
 .contactScale {
-  margin: 15vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,9 +102,8 @@ export default {
 }
 .gridContact {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  width: 100%;
   align-items: center;
 }
 .gridContact figure {
@@ -106,14 +117,25 @@ export default {
   border-radius: 10px;
 }
 .gridContact img {
-  max-width: 80px;
+  max-width: 70px;
 }
 @media (max-width: 768px) {
-  .contactScale{
+  .map {
+    max-width: 100%;
+  }
+  .contactScale {
     margin: 0;
   }
   .fontContact {
     font-size: 5rem;
+  }
+  .gridContact {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .gridContact {
+    grid-template-columns: 1fr;
   }
 }
 </style>

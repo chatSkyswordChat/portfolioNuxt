@@ -1,10 +1,16 @@
 <template>
-  <div class="flexW">
-    <oneself />
-    <threeColumn/>
-    <experience/>
-    <skill/>
-    <project/>
+  <div class="calC">
+    <v-container>
+      <v-row>
+        <v-col cols="12">
+          <oneself />
+          <threeColumn />
+          <experience />
+          <skill />
+          <project />
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 

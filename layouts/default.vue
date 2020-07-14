@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <navbar />
-    <v-content class="xHidden">
+    <v-content class="overflow-x-hidden">
         <v-container>
           <v-row>
             <nuxt />
